@@ -1,4 +1,4 @@
-<h1 align="center">Site de Postagens</h1>
+<h1 align="center">BlogApp</h1>
 
 
 <p align="center">
@@ -13,7 +13,6 @@
 <p align="center">
   <a href="#sobre">Sobre</a> •
   <a href="#recursos">Recursos</a> •
-  <a href="#capturas-de-tela">Capturas de Tela</a> •
   <a href="#instalação">Instalação</a> •
   <a href="#como-usar">Como Usar</a> •
   <a href="#contribuição">Contribuição</a> •
