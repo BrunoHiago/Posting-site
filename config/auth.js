@@ -25,12 +25,12 @@ module.exports = (passport)=>{
     }))
 
     passport.serializeUser((usuario, done)=>{
-        done(null, usuario.id)
+        return done(null, usuario.id)
     })
 
     passport.deserializeUser((id, done)=>{
-        Usuario.findById(id, (err, usuario)=>{
-            done(err, usuario)
+        Usuario.findById(id).then((usuario)=>{
+            done(null, usuario)
         })
     })
 }
