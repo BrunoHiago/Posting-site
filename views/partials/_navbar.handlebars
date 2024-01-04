@@ -12,6 +12,11 @@
         <li class="nav-item">
           <a class="nav-link" href="/categorias">Categorias</a>
         </li>
+        {{#if admin}}
+          <li class="nav-item">
+            <a class="nav-link" href="/admin">Admin</a>
+          </li>
+        {{/if}}
         
         {{#if user}}
           <li class="nav-item">
@@ -25,6 +30,8 @@
             <a class="nav-link" href="/usuarios/registro">Registre-se</a>
           </li>
         {{/if}}
+
+        
       </ul>
       
     </div>

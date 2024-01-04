@@ -11,9 +11,6 @@ router.get("/", isAdmin, (req,res)=>{
     res.render("admin/index")
 })
 
-router.get("/post", isAdmin,(req, res)=>{
-    res.send("Pagina de Posts")
-})
 
 router.get("/categoria", isAdmin,(req, res)=>{
     Categoria.find().sort({Data: "desc"}).then((categorias)=>{

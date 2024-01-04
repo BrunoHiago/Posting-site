@@ -26,7 +26,7 @@ Este é o meu site de postagens desenvolvido em Node.js com o uso do template Ha
 ## Recursos
 
 - Autenticação de usuários com sistema de login
-- Criação, leitura, atualização e exclusão de postagens
+- Criação, leitura, atualização e exclusão de postagens ao admin
 - Visualização de postagens em ordem cronológica
 - Páginas de perfil de usuário
 - Interface de usuário responsiva
@@ -59,7 +59,7 @@ npm start
 http://localhost:8081
 ```
 3. Faça login com sua conta de usuário ou crie uma nova conta
-4. Crie, leia, atualize e exclua postagens usando as funcionalidades do site
+4. Crie, leia, atualize e exclua postagens usando as funcionalidades do site. Para criar, atualizar e excluir sua conta, é necessário ser um administrador, o qual pode ser configurado diretamente no banco de dados, atualizando o campo `isAdmin` para 1.
 
 ## Contribuição
 
