@@ -15,6 +15,7 @@
     const Categoria = mongoose.model("categorias")
     const passport = require("passport")
     require("./config/auth")(passport)
+    require('dotenv').config();
 //Configurações
     //Sessao
         app.use(session({
@@ -43,7 +44,7 @@
         app.set("view engine", "handlebars")
     //Mongoose
         mongoose.Promise = global.Promise
-        mongoose.connect("mongodb://127.0.0.1:27017/blogapp").then(()=>{
+        mongoose.connect(process.env.MONGO_URL).then(()=>{
             console.log("Conectado ao Banco")
         }).catch((erro)=>{
             console.log("Erro ao conectar: " + erro)
