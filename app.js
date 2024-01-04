@@ -43,6 +43,7 @@
     //Handlebars
         app.engine("handlebars", handlebars.engine({defaultLayout: 'main', runtimeOptions:{allowProtoPropertiesByDefault: true}}))
         app.set("view engine", "handlebars")
+        app.set('views', path.join(__dirname, 'views'))
     //Mongoose
         mongoose.Promise = global.Promise
         mongoose.connect(process.env.MONGO_URL).then(()=>{
